@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wonderful.myfirstcode">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter2.FirstActivity" />
+        <activity android:name=".chapter2.SecondActivity">
+            <intent-filter>
+
+                <!-- 指定活动能响应的action和category -->
+                <action android:name="com.wonderful.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".chapter2.TestActivity" />
+        <activity android:name=".chapter2.NormalTestActivity" />
+        <activity
+            android:name=".chapter2.DialogTestActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".chapter3.UIActivity" />
+        <activity android:name=".chapter3.PercentActivity" />
+        <activity android:name=".chapter3.CustomTitleActivity" />
+        <activity android:name=".chapter3.recycler_view.RecyclerVewActivity" />
+        <activity android:name=".chapter3.ui_best_practice.UIBestPracticeActivity" />
+        <activity android:name=".chapter4.FragmentActivity" />
+        <activity android:name=".chapter4.simple_news.NewsContentActivity" />
+        <activity android:name=".chapter4.simple_news.NewsActivity" />
+        <activity android:name=".chapter5.BroadcastActivity" />
+
+        <receiver
+            android:name=".chapter5.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".chapter5.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.wonderful.myfirstcode.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".chapter5.force_offline.LoginActivity" />
+        <activity android:name=".chapter5.force_offline.ForceOfflineActivity" />
+        <activity android:name=".chapter6.PersistentActivity" />
+        <activity android:name=".chapter6.file_persistence.FilePersistenceActivity" />
+        <activity android:name=".chapter6.pref_persistence.SharePreferencesActivity" />
+        <activity android:name=".chapter6.sqlite_persistence.SQLiteActivity" />
+        <activity android:name=".chapter6.litepal_persistence.LitePalActivity" />
+        <activity android:name=".chapter7.ContentActivity" />
+        <activity android:name=".chapter7.permission.CallPhoneActivity" />
+        <activity android:name=".chapter7.provider.ReadContactActivity" />
+
+        <provider
+            android:name=".chapter7.provider.DataBaseProvider"
+            android:authorities="com.wonderful.myfirstcode.chapter7.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>

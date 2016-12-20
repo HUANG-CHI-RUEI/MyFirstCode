@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!-- 指定数据库名 -->
+    <dbname value="MyBookStore"></dbname>
+
+    <!-- 指定数据库版本号 -->
+    <version value="2"></version>
+
+    <!-- 指定所有的映射模型 -->
+    <list>
+        <mapping class="com.wonderful.myfirstcode.chapter6.litepal_persistence.Book"></mapping>
+        <mapping class="com.wonderful.myfirstcode.chapter6.litepal_persistence.Category"></mapping>
+    </list>
+</litepal>
