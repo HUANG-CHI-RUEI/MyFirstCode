@@ -82,7 +82,9 @@
             android:name=".chapter7.provider.DataBaseProvider"
             android:authorities="com.wonderful.myfirstcode.chapter7.provider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity android:name=".chapter8.MediaActivity"></activity>
     </application>
 
 </manifest>
