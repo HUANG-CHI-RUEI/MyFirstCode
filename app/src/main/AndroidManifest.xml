@@ -10,6 +10,10 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 手机振动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 访问SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".MyApplication"
@@ -84,7 +88,24 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".chapter8.MediaActivity"></activity>
+        <activity android:name=".chapter8.MediaActivity" />
+        <activity android:name=".chapter8.NotificationActivity" />
+        <activity android:name=".chapter8.NotificationTestActivity" />
+        <activity android:name=".chapter8.TakePhotoActivity"></activity>
+
+        <!-- android:name 属性的值是固定的
+             android:authorities 属性的值要和FileProvider.getUriForFile()方法中的第二个参数一致
+             <meta-data>来指定Uri的共享路径 -->
+        <provider
+            android:authorities="com.wonderful.myfirstcode.chapter8.TakePhotoActivity.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+
+        </provider>
     </application>
 
 </manifest>

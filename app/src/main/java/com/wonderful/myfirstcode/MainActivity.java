@@ -11,7 +11,9 @@ import com.wonderful.myfirstcode.chapter4.simple_news.NewsActivity;
 import com.wonderful.myfirstcode.chapter5.BroadcastActivity;
 import com.wonderful.myfirstcode.chapter6.PersistentActivity;
 import com.wonderful.myfirstcode.chapter7.ContentActivity;
+import com.wonderful.myfirstcode.chapter8.MediaActivity;
 import com.wonderful.myfirstcode.utils.IntentUtils;
+import com.wonderful.myfirstcode.utils.ToastUtils;
 
 import butterknife.BindView;
 
@@ -70,6 +72,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         btn_broadcast.setOnClickListener(this);
         btn_persistent.setOnClickListener(this);
         btn_content_provider.setOnClickListener(this);
+        btn_multimedia.setOnClickListener(this);
     }
 
     @Override
@@ -99,6 +102,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
             case R.id.btn_content_provider:
                 IntentUtils.myIntent(this, ContentActivity.class);
                 break;
+
+            case R.id.btn_multimedia:
+                //ToastUtils.showShort("多媒体测试");
+                IntentUtils.myIntent(this, MediaActivity.class);
+                break;
+
 
             default:
                 break;
