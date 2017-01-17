@@ -39,7 +39,7 @@ public class MediaActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.btn_play:
-                //IntentUtils.myIntent(this, ReadContactActivity.class);
+                IntentUtils.myIntent(this, MediaPlayActivity.class);
                 break;
 
 
