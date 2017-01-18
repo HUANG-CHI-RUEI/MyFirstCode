@@ -14,6 +14,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- 访问SD卡权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MyApplication"
@@ -108,7 +110,11 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".chapter8.MediaPlayActivity"></activity>
+        <activity android:name=".chapter8.MediaPlayActivity" />
+        <activity android:name=".chapter9.NetworkTechniqueActivity" />
+        <activity android:name=".chapter9.HttpActivity" />
+        <activity android:name=".chapter9.ParseXMLActivity" />
+        <activity android:name=".chapter9.ParseJSONActivity"></activity>
     </application>
 
 </manifest>
