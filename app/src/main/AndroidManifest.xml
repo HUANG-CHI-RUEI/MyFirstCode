@@ -114,7 +114,10 @@
         <activity android:name=".chapter9.NetworkTechniqueActivity" />
         <activity android:name=".chapter9.HttpActivity" />
         <activity android:name=".chapter9.ParseXMLActivity" />
-        <activity android:name=".chapter9.ParseJSONActivity"></activity>
+        <activity android:name=".chapter9.ParseJSONActivity" />
+        <activity android:name=".chapter10.Chapter10Activity" />
+        <activity android:name=".chapter10.inquiry_thread.ThreadActivity" />
+        <activity android:name=".chapter10.inquiry_thread.UpdateUITestActivity"></activity>
     </application>
 
 </manifest>

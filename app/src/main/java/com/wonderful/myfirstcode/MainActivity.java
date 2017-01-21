@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.wonderful.myfirstcode.base.BaseActivity;
+import com.wonderful.myfirstcode.chapter10.Chapter10Activity;
 import com.wonderful.myfirstcode.chapter3.UIActivity;
 import com.wonderful.myfirstcode.chapter2.FirstActivity;
 import com.wonderful.myfirstcode.chapter4.simple_news.NewsActivity;
@@ -74,6 +75,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         btn_content_provider.setOnClickListener(this);
         btn_multimedia.setOnClickListener(this);
         btn_network_technique.setOnClickListener(this);
+        btn_inquiry_service.setOnClickListener(this);
     }
 
     @Override
@@ -111,6 +113,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
             case R.id.btn_network_technique:
                 IntentUtils.myIntent(this, NetworkTechniqueActivity.class);
+                break;
+
+            case R.id.btn_inquiry_service:
+                IntentUtils.myIntent(this, Chapter10Activity.class);
                 break;
 
 
