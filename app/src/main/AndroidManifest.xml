@@ -16,6 +16,17 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 访问网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 百度 LBS 相关权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name=".MyApplication"
@@ -117,7 +128,38 @@
         <activity android:name=".chapter9.ParseJSONActivity" />
         <activity android:name=".chapter10.Chapter10Activity" />
         <activity android:name=".chapter10.inquiry_thread.ThreadActivity" />
-        <activity android:name=".chapter10.inquiry_thread.UpdateUITestActivity"></activity>
+        <activity android:name=".chapter10.inquiry_thread.UpdateUITestActivity" />
+
+        <service
+            android:name=".chapter10.service.MyService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".chapter10.service.MyServiceActivity" />
+
+        <service
+            android:name=".chapter10.service.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name=".chapter10.practice.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".chapter10.practice.DownloadActivity" />
+        <activity android:name=".chapter11.Chapter11Activity" />
+        <activity android:name=".chapter11.LocationActivity" />
+        <activity android:name=".chapter11.MapActivity"/>
+
+        <!-- 百度开发者 Key 配置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="fKWO7EvFPf0hBh522O70lqEL5vz2joMq"/>
+        <!-- 注册百度 LBS SDK 中的服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
     </application>
 
 </manifest>

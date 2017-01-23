@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import com.wonderful.myfirstcode.R;
 import com.wonderful.myfirstcode.chapter10.inquiry_thread.UpdateUITestActivity;
+import com.wonderful.myfirstcode.chapter10.practice.DownloadActivity;
+import com.wonderful.myfirstcode.chapter10.service.MyServiceActivity;
 import com.wonderful.myfirstcode.chapter9.HttpActivity;
 import com.wonderful.myfirstcode.chapter9.ParseJSONActivity;
 import com.wonderful.myfirstcode.chapter9.ParseXMLActivity;
@@ -39,11 +41,11 @@ public class Chapter10Activity extends AppCompatActivity implements View.OnClick
                 break;
 
             case R.id.btn_service:
-                IntentUtils.myIntent(this, ParseXMLActivity.class);
+                IntentUtils.myIntent(this, MyServiceActivity.class);
                 break;
 
             case R.id.btn_practice:
-                IntentUtils.myIntent(this, ParseJSONActivity.class);
+                IntentUtils.myIntent(this, DownloadActivity.class);
                 break;
 
 
