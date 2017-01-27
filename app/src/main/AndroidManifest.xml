@@ -148,18 +148,26 @@
         <activity android:name=".chapter10.practice.DownloadActivity" />
         <activity android:name=".chapter11.Chapter11Activity" />
         <activity android:name=".chapter11.LocationActivity" />
-        <activity android:name=".chapter11.MapActivity"/>
+        <activity android:name=".chapter11.MapActivity" />
 
         <!-- 百度开发者 Key 配置 -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="fKWO7EvFPf0hBh522O70lqEL5vz2joMq"/>
+            android:value="fKWO7EvFPf0hBh522O70lqEL5vz2joMq" />
         <!-- 注册百度 LBS SDK 中的服务 -->
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"/>
+            android:process=":remote" />
 
+        <activity android:name=".chapter12.Chapter12Activity" />
+        <activity
+            android:name=".chapter12.MaterialDesignActivity"
+            android:label="OnePiece" />
+        <activity
+            android:name=".chapter12.PartnerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

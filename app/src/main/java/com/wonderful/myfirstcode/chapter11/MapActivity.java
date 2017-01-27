@@ -119,7 +119,7 @@ public class MapActivity extends AppCompatActivity {
             baiduMap.animateMapStatus(update);
             update = MapStatusUpdateFactory.zoomTo(16f);
             baiduMap.animateMapStatus(update);
-            isFirstLocate = false;
+            //isFirstLocate = false;
         }
 
         MyLocationData.Builder locationBuilder = new MyLocationData.Builder();

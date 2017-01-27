@@ -7,6 +7,8 @@ import android.widget.Button;
 import com.wonderful.myfirstcode.base.BaseActivity;
 import com.wonderful.myfirstcode.chapter10.Chapter10Activity;
 import com.wonderful.myfirstcode.chapter11.Chapter11Activity;
+import com.wonderful.myfirstcode.chapter12.Chapter12Activity;
+import com.wonderful.myfirstcode.chapter12.MaterialDesignActivity;
 import com.wonderful.myfirstcode.chapter3.UIActivity;
 import com.wonderful.myfirstcode.chapter2.FirstActivity;
 import com.wonderful.myfirstcode.chapter4.simple_news.NewsActivity;
@@ -78,6 +80,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         btn_network_technique.setOnClickListener(this);
         btn_inquiry_service.setOnClickListener(this);
         btn_lbs_service.setOnClickListener(this);
+        btn_material_design.setOnClickListener(this);
     }
 
     @Override
@@ -123,6 +126,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
             case R.id.btn_lbs_service:
                 IntentUtils.myIntent(this, Chapter11Activity.class);
+                break;
+
+            case R.id.btn_material_design:
+                IntentUtils.myIntent(this, MaterialDesignActivity.class);
                 break;
 
             default:

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_chapter12"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.wonderful.myfirstcode.chapter12.Chapter12Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Material Design 实战"
+        android:layout_margin="10dp"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btn_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="toolbar" />
+
+    <Button
+        android:id="@+id/btn_slipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="滑动菜单" />
+
+    <Button
+        android:id="@+id/btn_hover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="悬浮按钮和可交互提示" />
+
+    <Button
+        android:id="@+id/btn_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="卡片式布局" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="下拉刷新" />
+
+    <Button
+        android:id="@+id/btn_folding_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="可折叠式标题栏" />
+
+    <!-- app:cardCornerRadius 指定卡片圆角的弧度，值越大弧度越大
+         app:elevation 指定卡片的高度，值越大投影范围越大，效果越淡-->
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:elevation="5dp">
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

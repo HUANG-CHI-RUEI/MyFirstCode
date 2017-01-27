@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 通过<item>标签定义 action 按钮
+         android:id 按钮id；android:icon 按钮图标；android:title 按钮文字
+         app:showAsAction 按钮的显示位置：
+             always 永远显示在Toolbar中，若屏幕不够则不显示
+             ifRoom 屏幕空间足够时显示在Toolbar中，不够时显示在菜单中
+             never 永远显示在菜单中
+        （Toolbar中的action只显示图标，菜单中的action只显示文字）-->
+    <item
+        android:id="@+id/backup"
+        android:icon="@mipmap/backup"
+        android:title="Backup"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@mipmap/delete"
+        android:title="Delete"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@mipmap/settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+</menu>
