@@ -166,8 +166,17 @@
             android:label="OnePiece" />
         <activity
             android:name=".chapter12.PartnerActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".chapter13.Chapter13Activity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout"/>
+
+        <service
+            android:name=".chapter13.LongRunningService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

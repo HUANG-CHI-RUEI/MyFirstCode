@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.wonderful.myfirstcode.R;
+import com.wonderful.myfirstcode.utils.LogUtils;
 
 public class Chapter12Activity extends AppCompatActivity implements View.OnClickListener{
 
@@ -34,6 +35,7 @@ public class Chapter12Activity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_toolbar:
+                LogUtils.d("TAG","debug log");
                 break;
 
             case R.id.btn_slipping:
